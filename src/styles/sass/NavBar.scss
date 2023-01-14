@@ -1,0 +1,45 @@
+@media screen and (max-width: 800px) {
+   #myTopnav{
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+
+
+   } 
+
+   .btn-list{
+    flex-direction: column;
+    width: initial;
+    display: flex;
+
+    button{
+        text-align: left;
+    }
+
+   }
+   .btn-auth{
+    flex-direction: column;
+   }
+
+   .btn-open{
+    display: initial !important;
+    font-size: 30px;
+    margin: 20px;
+    color: aliceblue;
+   }
+   
+.container-topnav{
+    display: flex;
+}
+
+  }
+
+  .width-size{
+    height: 250px !important;
+ }

@@ -1,0 +1,110 @@
+
+.Form{
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 80px;
+
+    select{
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .Titulos{
+        width: 90%;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+        grid-gap: 20px;
+        margin: 80px auto 40px ;
+
+        @media ( max-width: 650px ) { grid-template-columns: repeat(1, 1fr) }
+
+        h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+        
+        }
+        #Titulo{
+            width: 100%;
+        }
+
+        .titulo{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h2{ height: auto;}
+            input{
+                height: 50px;
+            }
+        }
+
+            
+        
+    }
+
+    .Forms{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+
+        padding: 80px 40px;
+        width: calc( 100% - ( 80px * 2 ) );
+
+        @media ( max-width: 650px ) { 
+            grid-template-columns: repeat(1, 1fr);
+            padding: 40px 20px;
+            width: calc( 100% - ( 20px * 2 ) );
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        textarea{
+            /* intenta siempre colocar valores en pixeles, sobre todo si solo cambia cuando es una pestaña muy pequeña o muy grande, hay utlizamos la media */
+            height: 350px;
+            resize: vertical;
+            font-size: 15px;
+        }
+    }
+
+    textarea, input {
+        outline: none;
+    }
+
+    button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 40%;
+        /* #E8630A */
+        
+        background: #E8630A;
+        border-radius: 60px;
+        border: none;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,110 @@
+.create-mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--colorText);
+
+    .editar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        h2{
+            margin-bottom: 0;
+        }
+        select{
+            width: 50%;
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+
+            @media ( max-width: 650px ) {
+                width: 70%;
+            }
+        }
+
+        label{ font-size:  20px; }
+
+        .update{
+            display: flex;
+            align-items: center;
+            input{
+                width: 50px;
+            }
+        }
+    }
+
+    &-selection{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        justify-items: center;
+
+        @media ( max-width: 700px ) {
+            grid-template-columns: repeat( 2,1fr );
+        }
+
+        .check{
+            display: flex;
+            gap: 12px;
+            width: 100px;
+            input, label{ cursor: pointer; }
+            input{ width: auto; }
+        }
+    }
+
+    h1{
+        color: #3eff6e;
+    }
+
+    h2{
+        margin-bottom: -12px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    input{
+        border-radius: 20px;
+        padding: 8px 12px;
+        width: 500px;
+        height: 25px;
+    }
+
+    @media ( max-width: 650px ) {
+        input{ width: 70%; }
+    }
+
+    input[type=checkbox]{ height: 20px;}
+
+    button{
+        height: 35px;
+        width: 150px;
+        border-radius: 20px;
+        padding: 4px 8px;
+        border: none;
+    }
+
+    textarea{
+        font-size: 15px;
+        resize: vertical;
+        width: 45%;
+    }
+
+    input{
+        &:focus{
+            border: 1px solid rgb(39, 243, 12);
+        }
+    }
+
+    input, textarea{
+        &:focus{
+            outline: none;
+        }
+    }
+
+}

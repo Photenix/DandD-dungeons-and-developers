@@ -1,0 +1,43 @@
+.big-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: auto;
+    width: 100vw;
+    button{
+        padding: 45px 20px;
+        width: 200px;
+        height: 150px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 31px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: none;
+
+        &:nth-child(3){ background: #98E7A4; }
+        &:nth-child(4){ background: #C1DBF0; }
+        &:nth-child(5){ background: rgba(255, 186, 97, 0.65); }
+        &:nth-child(6){ background: #f18dd8a6; }
+
+        &:disabled { 
+            cursor: no-drop;
+            color: white;
+            background: rgb(117, 117, 117);
+        }
+    }
+    
+}
+
+.not{
+    button{
+        &:nth-child(1){ background: #98E7A4; }
+        &:nth-child(2){ background: #C1DBF0; }
+    }
+    
+}

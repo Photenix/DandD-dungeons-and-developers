@@ -1,0 +1,78 @@
+
+
+.contenedor-pregunta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    input:checked + label{
+        background-color: #3DCD65;
+    }
+}
+
+.pregunta-number{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+}
+
+p{
+    display: block;
+}
+
+.pregunta-titulo{
+    text-align: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+display: block !important;
+}
+
+.listado-respuestas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+}
+
+
+
+
+
+.respuesta{
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    input{
+        display: none;
+    }
+
+    label{
+    &:hover{
+        cursor: pointer;
+    }
+}
+}
+
+.vista-r{
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #C8C8C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+
+}
+
+.label-selected{
+    background-color:#3DCD65 !important;
+}

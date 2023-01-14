@@ -1,0 +1,131 @@
+.mentoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 10px;
+    gap: 10px;
+
+    button{
+        width: 250px;
+        height: 30px;
+        border: none;
+        background: var(--button);
+        margin-top: 12px;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+
+        select{
+            width: 90px;
+            border-radius: 20px 0 0 20px;
+        }
+        input{
+            height: 30px;
+            padding: 0 8px;
+
+            text-align: center;
+            &:focus{
+                outline: none;
+            }
+        }
+        .lupa{
+            cursor: pointer;
+        }
+    }
+
+    .container-class{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card-class{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        border-radius: 20px;
+
+        box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+
+        img{
+            width: 80px;
+            height: 80px;
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            height: 100%;
+            width: 50%;
+
+            &-name{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 4px 0px;
+                gap: 4px;
+                width: 100%;
+            }
+
+            &-date{
+                display: flex;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+                width: 100%;
+
+                h2{
+                    width: 20px;
+                    height: 20px;
+                }
+                select{
+                    width: 50px;
+                }
+
+                .time{
+                    width: calc( 100% - ( 20px * 2 ) );
+                }
+                
+            }
+        }
+        
+        .d-e{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+
+            button{
+                width: 32px;
+                height: 32px;
+
+                border-radius: 5px;
+                border: none;
+            }
+
+            .e{
+                background: rgb(54, 173, 54);
+            }
+
+            .d{
+                background: rgb(206, 73, 73);
+            }
+        }
+    }
+}

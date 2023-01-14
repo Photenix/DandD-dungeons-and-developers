@@ -1,0 +1,24 @@
+.contenedor-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 50%;
+    font-family: 'Poppins';
+    font-style: normal;
+
+    .titulo {
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        color: var(--colorText)
+    }
+    
+    .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: var(--colorText);
+    }
+}
+

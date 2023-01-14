@@ -1,0 +1,105 @@
+$movil: 900px;
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* width: 100vw; */
+    padding: 60px 0 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: white;
+
+    &-info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 60px;
+        padding: 0 40px;
+        font-family: 'Poppins';
+        font-style: normal;
+
+        @media ( max-width: $movil ) {
+            flex-direction: column;
+            img{ width: 350px; }
+        }
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 40%;
+            font-family: 'Poppins';
+            font-style: normal;
+            button{
+                width: 150px;
+                height: 30px;
+                border: none;
+                background: #001E6C;
+                color: white;
+                transition: background 0.12s linear;
+                &:hover{ background: #2f4fa6; }
+                font-family: 'Poppins';
+                font-style: normal;
+            }
+
+            @media ( max-width: $movil ) {
+                width: auto;
+            }
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 25px;
+            font-family: 'Poppins';
+            font-style: normal;
+        }
+
+        .text-main{
+            font-weight: 600;
+            font-size: 46px;
+            line-height: 50%;
+            text-align: left;
+            font-family: 'Poppins';
+            font-style: normal;
+        }
+
+        img{
+            /* $size : 25vw;
+            height: $size;
+            width: $size; */
+        }
+    }
+
+    &-rango{
+        padding: 40px 80px;
+        background: #d9d9d98f;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        color: white;
+
+        gap: 12px;
+        padding: 20px;
+        border-radius: 20px;
+        height: max-content;
+        width: 200px;
+
+        h2{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+}

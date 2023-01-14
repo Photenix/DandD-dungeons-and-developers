@@ -1,0 +1,32 @@
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+
+    background: rgba(151, 151, 151, 0.2);
+
+    h2{
+        font-size: 35px;
+        font-weight: 500;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 50px;
+        gap: 30px;
+
+        img{
+            $cicle: 150px;
+            width: $cicle;
+            height: $cicle;
+            object-fit: contain;
+            border-radius: 50%;
+            background: white;
+            border: 2px solid black;
+        }
+    }
+}
+
+

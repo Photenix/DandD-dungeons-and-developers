@@ -1,0 +1,17 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 350px;
+    gap: 20px;
+
+    h1{
+        font-size: 60px;
+        color: rgb(98, 98, 233);
+    }
+    h2{
+        font-size: 20px;
+    }
+}

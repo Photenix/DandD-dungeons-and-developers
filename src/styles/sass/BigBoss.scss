@@ -1,0 +1,46 @@
+$movil : 550px;
+$tablet : 850px;
+
+.big-boss{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50px 0;
+
+    &-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        color:var(--colorText);
+    }
+
+    &-container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    @media (max-width: $movil){
+        line-height: 180%;
+        &-container{
+            gap: 8px;
+        }
+        &-img{
+            $mt: 20px;
+            width: 90px;
+            height: 140px;
+        }
+    }
+
+    @media ( max-width: $tablet ) and ( min-width: $movil ){
+        &-img{
+            $mt: 20px;
+            width: 150px;
+            height: 200px;
+        }
+    }
+}
